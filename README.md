@@ -1,42 +1,44 @@
-- [x] Setup do banco
-- [x] Seeding do banco (colocar dados)
-- [x] Introdução ao Next.js
-- [x] Tailwind e Shadcn
-- [x] Git Hooks
+Overview
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+BarberShop Scheduler é um sistema de agendamento online para barbearias, desenvolvido com TypeScript e Next.js. Este projeto tem como objetivo facilitar a marcação de horários para clientes e a gestão de agendamentos para os barbeiros. O sistema inclui autenticação via Google, permitindo que os usuários façam login rapidamente e com segurança.
 
-## Getting Started
+Features
 
-First, run the development server:
+	•	Autenticação com Google: Os usuários podem se autenticar usando suas contas do Google, garantindo um processo de login simples e seguro.
+	•	Agendamento de Horários: Os clientes podem visualizar a disponibilidade dos barbeiros e agendar horários de acordo com suas preferências.
+	•	Gerenciamento de Barbeiros: Permite que barbeiros configurem suas disponibilidades e gerenciem seus agendamentos diretamente na plataforma.
+	•	Responsividade: Interface otimizada para dispositivos móveis e desktops, proporcionando uma experiência de usuário consistente em qualquer tela.
+	•	Painel Administrativo: Um painel para os administradores da barbearia gerenciarem todos os agendamentos, barbeiros e horários disponíveis.
 
-```bash
+Tech Stack
+
+	•	Next.js: Framework de React para renderização no lado do servidor e rotas dinâmicas.
+	•	TypeScript: Superset de JavaScript que adiciona tipagem estática ao código, melhorando a manutenibilidade e reduzindo erros.
+	•	Google Auth: Integração com Google OAuth 2.0 para autenticação segura dos usuários.
+	•	Tailwind CSS: Framework de CSS utilitário para estilização rápida e eficiente.
+	•	Prisma: ORM para interagir com o banco de dados de forma segura e tipada.
+	•	ostgreSQL: Banco de dados leve e embutido para desenvolvimento local, via Neon.tech, banco de dados serverless.
+
+Installation
+
+npm install - instale as dependencias
+
+Configure as variáveis de ambiente:
+
+Crie um arquivo .env.local na raiz do projeto e adicione as seguintes variáveis:
+DATABASE_URL=postgresql://user:password@localhost:5432/mydb
+NEXTAUTH_URL=http://localhost:3000
+GOOGLE_CLIENT_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+
+Execute as migrações do banco de dados:
+
+npx prisma migrate dev
+
+Inicie o servidor de desenvolvimento:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Next.js para a estrutura incrível que facilita a criação de aplicativos web modernos.
+Google OAuth por fornecer uma solução de autenticação simples e segura.
+Tailwind CSS por permitir o desenvolvimento de interfaces de usuário elegantes e responsivas com facilidade.
