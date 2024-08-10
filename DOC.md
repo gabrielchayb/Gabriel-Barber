@@ -40,5 +40,7 @@ Agora, sobre o Next.js:
 
 npm run dev (abrirmos nossa pagina index e rodarmos a aplicação no localhost)
 
+Instalar prettier 
 
+npm install -D prettier-plugin-tailwindcss
 
