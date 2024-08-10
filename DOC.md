@@ -44,3 +44,11 @@ Instalar prettier
 
 npm install -D prettier-plugin-tailwindcss
 
+Instalar Husky para Git Hooks (rodar tailwind e prettier antes do commit)
+
+npm install -D husky lint-staged
+
+npx husky init
+
+
+
