@@ -22,7 +22,7 @@ const Home = async () => {
       <Header />
       <div className="p-5">
         {/* TEXTO */}
-        <h2 className="text-xl font-bold">Olá, Felipe!</h2>
+        <h2 className="text-xl font-bold">Olá, Gabriel!</h2>
         <p>Segunda-feira, 05 de agosto.</p>
 
         {/* BUSCA */}
@@ -50,16 +50,6 @@ const Home = async () => {
               </Link>
             </Button>
           ))}
-        </div>
-
-        {/* IMAGEM */}
-        <div className="relative mt-6 h-[150px] w-full">
-          <Image
-            alt="Agende nos melhores com FSW Barber"
-            src="/banner-01.png"
-            fill
-            className="rounded-xl object-cover"
-          />
         </div>
 
         {/* AGENDAMENTO */}
